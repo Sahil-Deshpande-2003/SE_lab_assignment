@@ -332,3 +332,7 @@ def createUser(request):
         except:
             return redirect("/user/create")
     return render(request,'createuser.html')
+
+
+def aboutClg(request):
+    return render(request, 'about.html')

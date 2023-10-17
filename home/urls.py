@@ -6,6 +6,8 @@ urlpatterns = [
     # path('',views.index,name="home"),
     path('', views.index, name="home"),
 
+    path('about', views.aboutClg, name="about"),
+
     path('login',views.loginUser,name="login"),
     path('logout',views.logoutUser,name="logout"),
 
