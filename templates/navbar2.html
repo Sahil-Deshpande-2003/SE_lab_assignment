@@ -13,7 +13,7 @@
     <!-- Container wrapper -->
     <div class="container">
       <!-- Navbar brand -->
-      <a a class="navbar-brand" style="font-size: 30px; letter-spacing: 0.75px; font-family: 'Times New Roman', Times, serif;color: floralwhite;" href="/"
+      <a a class="navbar-brand" style="font-size: 24px; letter-spacing: 0.75px; font-family: 'Times New Roman', Times, serif;color: floralwhite;" href="/"
             >COEP TECH CS LIBRARY</a>
   
       <!-- Toggle button -->
@@ -37,10 +37,7 @@
   
         <form class="d-flex align-items-center w-100 form-search">
           <div class="input-group">
-            <button class="btn btn-light dropdown-toggle shadow-0" type="button" data-mdb-toggle="dropdown"
-              aria-expanded="false" style="padding-bottom: 0.4rem;">
-              All
-            </button>
+            
             <input type="search" class="form-control" placeholder="Search" aria-label="Search" />
           </div>
           <a href="/" class="text-white"><i class="fas fa-search ps-3"></i></a>
@@ -48,11 +45,11 @@
   
         <ul class="navbar-nav ms-3">
           <li class="nav-item me-3">
-            <a class="nav-link d-flex align-items-center" href="/category/create">Create Category</a>
+            <a class="nav-link d-flex align-items-center" href="/category/create"><button class="btn btn-success mx-2" type="submit">Create Category</button></a>
           </li>
           <li class="nav-item">
             <a class="nav-link d-flex align-items-center me-3" href="/book/create">
-              <i class="fas fa-bookmark pe-2"></i> Create Book
+              <button class="btn btn-success mx-2" type="submit">Create Book</button>
             </a>
           </li>
           {% if user.is_authenticated %}
